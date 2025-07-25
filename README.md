@@ -15,7 +15,7 @@ A modern, secure, and user-friendly password generator built with vanilla HTML, 
 
 ## 🚀 Demo
 
-_Live Demo: [View Demo](your-demo-link-here)_
+_Live Demo: [View Demo](https://vanilla-js-simple-password-generato.vercel.app/)_
 
 ## 🛠️ Technologies Used
 
