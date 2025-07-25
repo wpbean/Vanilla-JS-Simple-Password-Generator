@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Password Generator</h1>
+            <p>Create strong and secure passwords instantly</p>
+        </div>
+
+        <div class="password-display">
+            <input type="text" class="password-output" id="passwordOutput"
+                placeholder="Your generated password will appear here..." readonly>
+            <button class="copy-btn" id="copyBtn">Copy</button>
+        </div>
+
+        <div class="options">
+            <div class="length-control">
+                <label for="lengthSlider">Password Length:</label>
+                <div class="length-input">
+                    <input type="range" class="length-slider" id="lengthSlider" min="4" max="50" value="16">
+                    <span class="length-value" id="lengthValue">16</span>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="uppercase" checked>
+                        <label for="uppercase">Uppercase (A-Z)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Lowercase (a-z)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="numbers" checked>
+                        <label for="numbers">Numbers (0-9)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="symbols" checked>
+                        <label for="symbols">Symbols (!@#$%^&*)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="excludeSimilar">
+                        <label for="excludeSimilar">Exclude Similar (0,O,l,I)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="excludeAmbiguous">
+                        <label for="excludeAmbiguous">Exclude Ambiguous ({}[]()/\\'"~,;&.)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">Generate Password</button>
+
+        <div class="strength-indicator" id="strengthIndicator">
+            Password Strength: <span id="strengthText">Strong</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
